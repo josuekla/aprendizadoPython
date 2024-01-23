@@ -1,5 +1,7 @@
 for numero in range(1,int(input("Digite um número para determinar o fim: ")),1):
     print("            ",str(numero))
+    
+
 #FOR criou uma variavel "numero" e de acordo com a função
 # "range()" ---> Que permite especificar uma faixa de valores e como será incrementada
 # comecará do 1 até atingir o númeroo desejado
