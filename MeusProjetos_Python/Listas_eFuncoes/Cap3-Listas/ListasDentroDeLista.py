@@ -1,4 +1,3 @@
-
 inventario = []
 
 resposta = 'S'
@@ -33,7 +32,7 @@ for elemento in inventario:
         print("Novo valor: ", elemento[1])
 # Excluir itens escolhido pelo usuário de acordo com o número do serial
 serial = int(input("Digite o serial do equipamento que será excluído: "))
-for elemento in inventario:
+for elemento in inventario.copy():
     if elemento[2] == serial:
         inventario.remove(elemento)
 
