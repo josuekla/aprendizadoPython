@@ -22,8 +22,12 @@ def pesquisar(dicionario, chave):
 
 
 def excluir(dicionario, chave):
-    if dicionario.get(chave) is not None:
-        del dicionario[chave]
+    if chave in dicionario:
+        valor = dicionario.pop(chave)
+        print("Objeto eliminado:", valor)
+    else:
+        print("Chave não encontrada")
+
 
 
 def listar(dicionario):
@@ -31,4 +35,3 @@ def listar(dicionario):
         print("OBJETO.........")
         print("Login: ", chave)
         print("Dados: ", valor)
-

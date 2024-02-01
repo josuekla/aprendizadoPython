@@ -6,9 +6,9 @@ while opcao == "I" or opcao == "P" or opcao == "E" or opcao == "L":
         inserir(usuarios)
 
     if opcao == "P":
-        pesquisar(usuarios, input("Qual  usuário deseja pesquisar? "))
+        pesquisar(usuarios, input("Qual  login deseja pesquisar? ").upper())
     if opcao == "E":
-        excluir(usuarios, input("qual usuário deseja excluir?"))
+        excluir(usuarios, input("Qual login deseja excluir?").upper())
     if opcao == "L":
         listar(usuarios)
     opcao = perguntar()
