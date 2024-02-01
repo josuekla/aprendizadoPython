@@ -1,5 +1,5 @@
-'''teste de projeto
-'''
+"""  teste de projeto
+"""
 from meus_projetos_python.Cap3_Funcoes.indetificacoesdefuncoes import *
 
 minhaLista = []
