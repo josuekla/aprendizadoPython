@@ -20,12 +20,15 @@ def pesquisar(dicionario, chave):
         print("Última data de acesso: ", lista[1])
         print("Última estação: ", lista[2])
 
+
 def excluir(dicionario, chave):
     if dicionario.get(chave) is not None:
-        del dicionario.[chave]
+        del dicionario[chave]
+
 
 def listar(dicionario):
-    for chave,valor in dicionario.item():
+    for chave, valor in dicionario.items():
         print("OBJETO.........")
-        print("Login: ",chave)
-        print("Dados: ",valor)
+        print("Login: ", chave)
+        print("Dados: ", valor)
+
