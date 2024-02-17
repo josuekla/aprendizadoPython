@@ -1,0 +1,6 @@
+n = input("digite o valor")
+print('o primitivo dele é:',type(n))
+print("É minúsculo",n.islower())
+print("É Maiúsculo ",n.isupper())
+print("É decimal",n.isdecimal())
+print("É numérico  ",n.isalnum())
