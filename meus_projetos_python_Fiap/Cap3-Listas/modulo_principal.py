@@ -1,6 +1,6 @@
 """  teste de projeto
 """
-from meus_projetos_python.Cap3_Funcoes.indetificacoesdefuncoes import *
+from meus_projetos_python_Fiap.Cap3_Funcoes.indetificacoesdefuncoes import *
 
 minhaLista = []
 print("Preenchendo")

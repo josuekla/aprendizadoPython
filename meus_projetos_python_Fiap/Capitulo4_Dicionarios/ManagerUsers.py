@@ -1,4 +1,4 @@
-from meus_projetos_python.Capitulo4_Dicionarios.Funcoes import *
+from meus_projetos_python_Fiap.Capitulo4_Dicionarios.Funcoes import *
 usuarios = {}
 opcao = perguntar()
 while opcao == "I" or opcao == "P" or opcao == "E" or opcao == "L":
@@ -13,5 +13,5 @@ while opcao == "I" or opcao == "P" or opcao == "E" or opcao == "L":
         listar(usuarios)
     opcao = perguntar()
 
-        
-        
+
+
