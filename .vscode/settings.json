@@ -1,11 +1,12 @@
 {
-  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.typeCheckingMode": "off",
   "python.linting.pylintEnabled": true,
   "python.linting.enabled": true,
   "editor.fontFamily": "JetBrains Mono",
   "python.testing.pytestArgs": [
     "."
   ],
+
   "python.testing.unittestEnabled": false,
   "python.testing.pytestEnabled": true,
 

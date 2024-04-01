@@ -13,7 +13,7 @@ print("PEDRA")
 sleep(1)
 print("PAPEL")
 sleep(1)
-print("TESOURA\n")
+print("TESOURA\n  ")
 
 if opcaoJog == 1 and escolhacom == 2:
     print("JOGADOR VENCE, o COM escolheu TESOURA")
