@@ -12,9 +12,9 @@
 
   "files.exclude": {
     "**/.idea": true,
-    "meus_projetos_python_Fiap": true,
+    "meus_projetos_python_Fiap": false,
     ".pylintrc":true,
-    
+
 
   }
 }
