@@ -1,0 +1,20 @@
+{
+  "python.analysis.typeCheckingMode": "off",
+  "python.linting.pylintEnabled": true,
+  "python.linting.enabled": true,
+  "editor.fontFamily": "JetBrains Mono",
+  "python.testing.pytestArgs": [
+    "."
+  ],
+
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestEnabled": true,
+
+  "files.exclude": {
+    "**/.idea": true,
+    "meus_projetos_python_Fiap": false,
+    ".pylintrc":true,
+
+
+  }
+}
