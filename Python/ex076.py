@@ -1,35 +1,52 @@
-print("Vamos jogar o Jogo da palavra secreta".center(50, "-"))
-palavra_secreta = "LEALDADE"
-letras_corretas = ''
-while True:
+import os
 
-    palavra_usuario = input("Digite apenas uma letra para adivinhar a palavra: ").upper()
+
+print("\033[34m" + "Vamos jogar o Jogo da palavra secreta".center(50, "-")+ "\033[0m")
+
+
+
+palavra_secreta = "tubarao"
+letras_corretas = ''
+loser = 0
+while True:
+    
+    palavra_usuario = input("\033[33m"+"Digite apenas uma letra para adivinhar a palavra: ").lower()
     numD = len(palavra_usuario)
 
 
     try:
         if numD > 1 :
-            print("Você digitou mais deu uma letra ou \ndigitou número\n.")
+            print("\033[31m"+"Você digitou mais deu uma letra ou \ndigitou número\n.")
         float(palavra_usuario)
         print("Você tentou digitar um número")
         continue
     
     except:
 
-      
 
-        loser = 0
         # if numD == 1:
             # validar = True
-                
+        palavra_formada = ""
         if palavra_usuario in palavra_secreta:
             letras_corretas += palavra_usuario
 
         for letras_secretas in palavra_secreta:
             if letras_secretas in letras_corretas:
-                print(letras_secretas)
+                palavra_formada += letras_secretas
             else:
-                print("*")
+                palavra_formada += "*"
+
+        loser += 1
+        print("Palavra formada: ", palavra_formada)
+
+        if palavra_formada == palavra_secreta:
+            os.system('cls')
+            print("PARABÉNS VOCÊ GANHOU!!!")
+            print("A palavra era", palavra_secreta)
+            print("Tentativas:", loser, "vezes")
+            letras_corretas = ""
+            loser = 0   
+
 
 
             # indentacao = palavra_secreta.index(palavra_usuario)
