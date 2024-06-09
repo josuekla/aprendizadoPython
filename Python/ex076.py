@@ -2,12 +2,14 @@ import os
 
 
 print("\033[34m" + "Vamos jogar o Jogo da palavra secreta".center(50, "-")+ "\033[0m")
+# print("Dica: Profissão")
 
 
 
-palavra_secreta = "tubarao"
+palavra_secreta = "odisseia"
 letras_corretas = ''
 loser = 0
+tentativas = 0
 while True:
     
     palavra_usuario = input("\033[33m"+"Digite apenas uma letra para adivinhar a palavra: ").lower()
@@ -37,6 +39,13 @@ while True:
                 palavra_formada += "*"
 
         loser += 1
+        if palavra_usuario not in palavra_secreta:
+            tentativas += 1
+            print(f"Você errou {tentativas} vezes")
+        if tentativas == 5:
+            print("\033[31m" + "VOCÊ JÁ ERROU 5 VEZES")
+            print("A palavra era", palavra_secreta)
+            break
         print("Palavra formada: ", palavra_formada)
 
         if palavra_formada == palavra_secreta:
@@ -46,6 +55,8 @@ while True:
             print("Tentativas:", loser, "vezes")
             letras_corretas = ""
             loser = 0   
+            
+
 
 
 
